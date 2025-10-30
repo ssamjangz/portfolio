@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ===== Reset and Base Styles ===== 
+
+    Reason: may browsers kasi na may default margin and padding
+    kaya i suggest na i-reset yung margins.
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Montserrat, sans-serif; /* yung sa import */
+    background-color: #F2F3F4; /* ayaw ko full white */
+}
+
+/* ===== Navigation Bar ===== */
+.nav {
+    background-color: #e8dcc4; /* light beige */
+    padding: 10px 20px; /* space sa loob ng nav */
+    border-bottom: 1px solid #000; /* line sa baba ng nav este divider*/
+    position: sticky; /* para laging nakikita yung nav pag nag scroll */
+    top: 0;
+    z-index: 1000; /* para laging nasa ibabaw ng ibang content */
+}
+
+.nav ul {
+    list-style: none; /* alisin yung bullets kasi ul ang gamit */
+    display: flex; /* para magkatabi yung items */
+    align-items: center; /* vertical alignment */
+    gap: 20px; /* space between items */
+}
+
+.nav li {
+    display: inline-block; /* para magmukhang button yung links */
+}
+
+/* this is for the title */
+.nav li p { 
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+}
+
+/* this is for the links */
+.nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 8px 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* kapag hinover yung link, parang nagdadarken yung bg */
+.nav a:hover {
+    background-color: #d4c5a9;
+    border-radius: 5px;
+}
+
+/* ===== Content Area ===== */
+.content {
+    max-width: 1400px; /* para di masyadong malapad */
+    margin: 40px 70px; /* space sa paligid ng content */
+    padding: 0; /* alisin yung default padding */
+}
+
+/* ===== Row and Column Layout ===== */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.column {
+    flex: 2;
+    min-width: 280px;
+    padding: 20px;
+}
+
+.column-image {
+    flex: 0 0 auto;
+    text-align: center;
+    margin-right: 50px;
+}
+
+
+/* ===== Typography ===== */
+h1 {
+    margin-bottom: 15px; /* para magkaroon ng space sa baba */
+}
+
+h2 {
+    margin-bottom: 20px; /* para magkaroon ng space sa baba */
+}
+
+p {
+    margin-bottom: 15px; /* para magkaroon ng space sa baba */
+    line-height: 1.6; /* para mas madaling basahin and para 'di dikit2x */
+}
+
+/* ===== Lists ===== */
+
+.column ul {
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+.column li {
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+/* ===== Images ===== */
+img {
+    max-width: 100%; /* para fit diba */
+    height: auto;
+    display: block; /* para mawala ung extra space sa baba */
+}
+
+/* ===== Horizontal Rule ===== 
+
+    para mas mukhang ✨estetik✨ 
+    - (margin sa top at bottom)
+    - border color light gray
+*/
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0 30px 0;
+}
