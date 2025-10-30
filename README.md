@@ -3,9 +3,9 @@
 Project for ICT 8.
 
 ## 📋 Table of Contents
-- [Project Structure](#project-structure)
-- [Pages](#pages)
-- [Notes](#notes)
+- [Project Structure](#-project-structure)
+- [Pages](#-pages)
+- [Notes](#-notes)
 
 
 ## 📁 Project Structure
@@ -45,5 +45,6 @@ sam/
 
 **Created by:** Samantha G. Guillergan  
 **Last Updated:** October 2025  
+
 
 
